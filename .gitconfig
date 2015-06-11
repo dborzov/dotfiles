@@ -1,0 +1,17 @@
+# gitconfig
+
+[user]
+    name = Dmitry Borzov
+    email = tihoutrom@gmail.com
+
+[alias]
+    lg  = log --graph --decorate
+    llg = log --oneline --graph --decorate
+    ll  = log --oneline
+
+    dc = diff --cached
+    st = status --short
+    ci = commit
+    rb = rebase
+    br = branch
+    co = checkout
