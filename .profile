@@ -5,6 +5,15 @@ function separator() {
   printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' ❤
 }
 
+
+# tagme allows me to quickly change the title of iTerm tab
+# so I can keep track of what I have been working on in this tab
+# here is th syntax:
+#             tagme 'My new tab title!!!'
+function tagme() {
+  echo -ne "\033]0;-$1 :)\007"
+}
+
 export PS1="\e[36m$(separator)\n\e[0;33m[\e[31m★\e[36m★\e[92m★\e[0;33m\A\[$(tput sgr0)\e[92m★\e[36m★\e[31m★\e[0;33m] \e[31m\w/\e[97m\]"
 
 # boot2docker things
