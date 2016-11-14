@@ -8,7 +8,7 @@
     lg  = log --graph --decorate
     llg = log --oneline --graph --decorate
     ll  = log --oneline
-    ls  = show --pretty="" --name-only
+    ls  = show --pretty="" --stat
     dc = diff --cached
     st = status --short
     ci = commit
