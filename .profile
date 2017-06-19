@@ -25,5 +25,4 @@ function ssh2virtualbox() {
 export PS1="\[\e[33m\]★\[\e[92m\]\A\[\e[36m\]★\[\e[92m\] \w \[\e[97m\]"
 export GOPATH=~
 export PATH=~/.rbenv/shims:/usr/sbin:/sbin:/usr/local/go/bin:~/bin:$PATH
-eval "$(rbenv init -)"
 GIT_PS1_SHOWDIRTYSTATE=true

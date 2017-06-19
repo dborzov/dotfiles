@@ -10,7 +10,6 @@
 #   editor.onDidSave ->
 #     console.log "Saved! #{editor.getPath()}"
 
-atom.beep()
 atom.commands.add 'atom-text-editor', 'editor:dimonize', ->
   return unless editor = atom.workspace.getActiveTextEditor()
   return unless point = editor.getCursorBufferPosition()
